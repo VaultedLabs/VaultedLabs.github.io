@@ -10,5 +10,5 @@ window.VAULT = {
   xHq: "https://x.com/VaultStationHQ",
   xCoin: "https://x.com/HoldVaulted",
   github: "https://github.com/VaultedLabs/VaultedLabs.github.io",
-  email: ""
+  email: "vaultedwealthkey@gmail.com"
 };
