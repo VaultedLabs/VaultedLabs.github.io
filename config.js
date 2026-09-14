@@ -5,15 +5,11 @@ window.VAULT = {
   pump: "https://pump.fun/join/VaultedLabs",
   pumpCode: "VaultedLabs",
   wallet: "CQknLDqYnrpTGaXf7uSeDEAox8b7zuwJrYDgpryKqm2u",
-  refreshMs: 7000,
   assets: [
     {
       mint: "7iAAaqvZx9tihTxsn6CixqyRNPD3h8zL7SvVhQzUpump",
       ticker: "MacCoin",
       name: "Big Mac Coin"
     }
-  ],
-  blotter: [
-    { side: "entry", ticker: "MacCoin", size: "book", entry: "live" }
   ]
 };
