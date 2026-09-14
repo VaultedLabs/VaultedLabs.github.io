@@ -6,12 +6,11 @@
   if (year) year.textContent = new Date().getFullYear();
   document.querySelectorAll("[data-copy]").forEach((el) => {
     el.addEventListener("click", async () => {
-      const text = el.getAttribute("data-copy");
       try {
-        await navigator.clipboard.writeText(text);
+        await navigator.clipboard.writeText(el.getAttribute("data-copy"));
         const prev = el.textContent;
         el.textContent = "copied";
-        setTimeout(() => (el.textContent = prev), 1400);
+        setTimeout(() => (el.textContent = prev), 1200);
       } catch {}
     });
   });
