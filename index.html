@@ -62,23 +62,52 @@
           <strong>Vaulted Labs</strong>
           <p>Design, sites, and small apps.</p>
         </a>
-        <a class="plain" href="https://pump.fun/join/VaultedLabs" target="_blank" rel="noopener">
-          <span class="tiny">Pump · open</span>
+        <a class="plain" href="#book">
+          <span class="tiny">Book · live</span>
           <strong>Experiments</strong>
-          <p>Whatever is cooking sits on the book.</p>
+          <p>Market, flow, and fills sit on the book.</p>
         </a>
       </div>
     </section>
     <section class="band dark" id="book">
       <div class="band-label">02</div>
       <div class="kicker">The book</div>
-      <h3>Live wallets, priced by the <em>floor.</em></h3>
-      <div class="frame">
-        <div class="frame-head"><span>Live book</span><span class="dot"> / pump</span></div>
-        <div class="row"><span>Handle</span><span>VaultedLabs</span><button class="copy" data-copy="VaultedLabs" type="button">Copy</button></div>
-        <div class="row"><span>Join</span><span>pump.fun/join/VaultedLabs</span><a class="copy" href="https://pump.fun/join/VaultedLabs" target="_blank" rel="noopener">Open</a></div>
-        <div class="row"><span>Watch</span><span>CQknLD…qm2u</span><button class="copy" data-copy="CQknLDqYnrpTGaXf7uSeDEAox8b7zuwJrYDgpryKqm2u" type="button">Copy</button></div>
-        <a class="frame-foot" href="https://solscan.io/account/CQknLDqYnrpTGaXf7uSeDEAox8b7zuwJrYDgpryKqm2u" target="_blank" rel="noopener">Solscan →</a>
+      <h3>Assets, entries, exits, <em>size.</em></h3>
+      <div class="desk" id="liveDesk">
+        <div class="desk-head">
+          <div>
+            <div class="tiny" id="assetMeta">Loading book…</div>
+            <div class="asset-name" id="assetName">—</div>
+          </div>
+          <select id="assetSelect" aria-label="Select asset"></select>
+        </div>
+        <div class="stats" id="assetStats">
+          <div><span>Market cap</span><b id="sMcap">—</b></div>
+          <div><span>Price</span><b id="sPrice">—</b></div>
+          <div><span>24h volume</span><b id="sVol">—</b></div>
+          <div><span>24h</span><b id="sChg">—</b></div>
+          <div><span>Entries</span><b id="sBuys">—</b></div>
+          <div><span>Exits</span><b id="sSells">—</b></div>
+        </div>
+        <div class="chart-wrap">
+          <iframe id="assetChart" title="Live chart" loading="lazy"></iframe>
+        </div>
+        <div class="frame">
+          <div class="frame-head"><span>Flow</span><span class="dot" id="flowStamp"> / live</span></div>
+          <div class="flow-head"><span>Window</span><span>Entries</span><span>Exits</span><span>Volume</span><span>Move</span></div>
+          <div id="flowBody"></div>
+        </div>
+        <div class="frame blotter">
+          <div class="frame-head"><span>Blotter</span><span class="dot"> / desk fills</span></div>
+          <div class="flow-head"><span>Side</span><span>Asset</span><span>Size</span><span>Entry</span><span>Mark</span></div>
+          <div id="blotterBody"></div>
+        </div>
+        <div class="desk-links">
+          <a id="linkPump" target="_blank" rel="noopener">Pump →</a>
+          <a id="linkDex" target="_blank" rel="noopener">Dexscreener →</a>
+          <a id="linkOtc" target="_blank" rel="noopener">OTC desk →</a>
+          <a href="https://solscan.io/account/CQknLDqYnrpTGaXf7uSeDEAox8b7zuwJrYDgpryKqm2u" target="_blank" rel="noopener">Watch wallet →</a>
+        </div>
       </div>
     </section>
     <section class="band" id="desk">
