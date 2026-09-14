@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vault Station HQ — Vaulted Labs</title>
-  <meta name="description" content="Vault Station HQ is the public desk of Vaulted Labs. Latest projects, live Pump wallets, and the X feed." />
-  <meta name="theme-color" content="#080808" />
+  <meta name="description" content="Vault Station HQ is the public desk of Vaulted Labs. Latest projects, live Pump book, and X." />
+  <meta name="theme-color" content="#0b0d0c" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Oswald:wght@500;600&display=swap" rel="stylesheet" />
@@ -14,81 +14,89 @@
 <body>
   <nav>
     <div class="wrap nav-inner">
-      <a class="brand" href="#top"><b></b> Vault Station</a>
+      <a class="brand" href="#top"><span class="mark"></span> Vault Station</a>
       <button class="hamburger" id="menuBtn" aria-label="Menu">☰</button>
       <div class="pills" id="navLinks">
         <a href="#work">Work</a>
-        <a href="#wallets">Wallets</a>
+        <a href="#book">Book</a>
         <a href="#desk">Desk</a>
       </div>
       <div class="nav-cta">
         <a class="btn ghost" href="https://x.com/VaultStationHQ" target="_blank" rel="noopener">X</a>
-        <a class="btn cream" href="https://pump.fun/profile/CQknLDqYnrpTGaXf7uSeDEAox8b7zuwJrYDgpryKqm2u" target="_blank" rel="noopener">Pump profile</a>
+        <a class="btn green" href="https://pump.fun/join/VaultedLabs" target="_blank" rel="noopener">Pump · VaultedLabs</a>
       </div>
     </div>
   </nav>
   <header class="hero" id="top">
     <div class="wrap">
       <div class="kicker">Vaulted Labs · public desk</div>
-      <h1>Latest work<br>from inside<br>the <em>vault.</em></h1>
-      <p class="lede">This is the place to see what is live. Projects, experiments, and the wallets that hold them — not a launch page.</p>
+      <h1>See the work.<br>Follow the book.</h1>
+      <p class="lede">Latest projects live here. The Pump profile is the live wallet. X is the log. No ticker page.</p>
       <div class="hero-row">
-        <a class="btn cream" href="#work">See projects</a>
-        <a class="btn hot" href="https://pump.fun/profile/CQknLDqYnrpTGaXf7uSeDEAox8b7zuwJrYDgpryKqm2u" target="_blank" rel="noopener">Open Pump book</a>
-        <a class="btn ghost" href="https://x.com/VaultStationHQ" target="_blank" rel="noopener">@VaultStationHQ</a>
+        <a class="btn green" href="https://pump.fun/join/VaultedLabs" target="_blank" rel="noopener">Open Pump profile</a>
+        <a class="btn cream" href="https://x.com/VaultStationHQ" target="_blank" rel="noopener">@VaultStationHQ</a>
+        <a class="btn ghost" href="#work">Projects</a>
       </div>
     </div>
   </header>
-  <div class="tape">
-    <div class="tape-track">
-      <span>Vaulted Labs</span><span>Projects first</span><span>Live wallets on Pump</span><span>Built inside the Vault</span><span>No ticker desk</span>
-      <span>Vaulted Labs</span><span>Projects first</span><span>Live wallets on Pump</span><span>Built inside the Vault</span><span>No ticker desk</span>
+  <div class="metrics">
+    <div class="wrap metrics-row">
+      <div><span>Desk</span><b>Vaulted Labs</b></div>
+      <div><span>Pump</span><b>join/VaultedLabs</b></div>
+      <div><span>X</span><b>@VaultStationHQ</b></div>
+      <div><span>Status</span><b class="up">Live</b></div>
     </div>
   </div>
   <section id="work">
     <div class="wrap">
       <div class="kicker">Work</div>
       <h2>On the board</h2>
-      <p class="muted" style="margin-bottom:22px;max-width:540px">What is current. When a new experiment ships, it lands here first.</p>
       <div class="grid g2">
         <a class="panel" href="#desk">
-          <div class="status">Live</div>
+          <div class="chips"><span class="chip live">Live</span><span class="chip">Studio</span></div>
           <div class="card-title">Vaulted Labs</div>
-          <p class="muted">AI-assisted design, websites, and small apps for people who need a presence and do not have time.</p>
+          <p class="muted">Design, sites, and small apps. The studio behind the door.</p>
         </a>
-        <a class="panel" href="https://pump.fun/profile/CQknLDqYnrpTGaXf7uSeDEAox8b7zuwJrYDgpryKqm2u" target="_blank" rel="noopener">
-          <div class="status">Open book</div>
-          <div class="card-title">Pump experiments</div>
-          <p class="muted">The live wallet, open positions, and whatever is cooking on Pump.fun. Other venues get a slot when they exist.</p>
+        <a class="panel" href="https://pump.fun/join/VaultedLabs" target="_blank" rel="noopener">
+          <div class="chips"><span class="chip live">Open</span><span class="chip">Pump</span></div>
+          <div class="card-title">Experiments</div>
+          <p class="muted">Whatever is cooking sits on the Pump book. Other venues get a slot when they show up.</p>
         </a>
       </div>
     </div>
   </section>
-  <section id="wallets">
+  <section id="book">
     <div class="wrap">
-      <div class="kicker">Wallets</div>
-      <h2>Live on Pump</h2>
-      <p class="muted" style="margin-bottom:22px;max-width:560px">Positions update on Pump. This desk points at the official profile so you do not have to hunt replies.</p>
-      <div class="grid g2">
-        <div class="panel">
-          <div class="status">Primary book</div>
-          <div class="card-title">CQKnLD</div>
-          <p class="mono">CQknLDqYnrpTGaXf7uSeDEAox8b7zuwJrYDgpryKqm2u</p>
-          <div class="hero-row">
-            <a class="btn cream" href="https://pump.fun/profile/CQknLDqYnrpTGaXf7uSeDEAox8b7zuwJrYDgpryKqm2u" target="_blank" rel="noopener">Pump profile</a>
-            <a class="btn ghost" href="https://solscan.io/account/CQknLDqYnrpTGaXf7uSeDEAox8b7zuwJrYDgpryKqm2u" target="_blank" rel="noopener">Solscan</a>
-            <button class="copy" data-copy="CQknLDqYnrpTGaXf7uSeDEAox8b7zuwJrYDgpryKqm2u" type="button">copy</button>
+      <div class="kicker">Book</div>
+      <h2>Live wallets</h2>
+      <div class="terminal">
+        <div class="term-head">
+          <div>
+            <div class="status">Official Pump</div>
+            <div class="card-title">VaultedLabs</div>
           </div>
-          <p class="muted" style="margin-top:16px">Add another venue later — the list lives in config.js.</p>
+          <a class="btn green" href="https://pump.fun/join/VaultedLabs" target="_blank" rel="noopener">Open profile</a>
         </div>
-        <div class="panel">
-          <div class="status">Direct</div>
-          <div class="card-title">Socials</div>
-          <p class="muted">X is the log. Pump is the book. This site is the index.</p>
-          <div class="hero-row">
-            <a class="btn cream" href="https://x.com/VaultStationHQ" target="_blank" rel="noopener">X profile</a>
-            <a class="btn ghost" href="https://x.com/VaultStationHQ" target="_blank" rel="noopener">Latest posts</a>
+        <div class="term-grid">
+          <div>
+            <div class="label">Referral / handle</div>
+            <div class="mono">VaultedLabs</div>
+            <button class="copy" data-copy="VaultedLabs" type="button">copy code</button>
           </div>
+          <div>
+            <div class="label">Join link</div>
+            <div class="mono">pump.fun/join/VaultedLabs</div>
+            <a class="copy" href="https://pump.fun/join/VaultedLabs" target="_blank" rel="noopener">open</a>
+          </div>
+          <div>
+            <div class="label">Watch wallet</div>
+            <div class="mono">CQknLD…qm2u</div>
+            <button class="copy" data-copy="CQknLDqYnrpTGaXf7uSeDEAox8b7zuwJrYDgpryKqm2u" type="button">copy address</button>
+          </div>
+        </div>
+        <div class="term-foot">
+          Positions update on Pump. This desk only points at the official join link and the watch wallet.
+          <a href="https://solscan.io/account/CQknLDqYnrpTGaXf7uSeDEAox8b7zuwJrYDgpryKqm2u" target="_blank" rel="noopener">Solscan</a>
         </div>
       </div>
     </div>
@@ -98,15 +106,15 @@
       <div class="kicker">Desk</div>
       <h2>Vaulted Labs</h2>
       <div class="grid g3">
-        <div class="panel"><div class="card-title">Design</div><p class="muted">Marks, mascots, campaign art, systems that feel finished.</p></div>
-        <div class="panel"><div class="card-title">Sites</div><p class="muted">Landing pages and desks that load, read clean, and stay up.</p></div>
-        <div class="panel"><div class="card-title">Apps</div><p class="muted">Small tools. Launch pages. Whatever the next experiment needs.</p></div>
+        <div class="panel"><div class="card-title">Design</div><p class="muted">Marks, mascots, campaign art.</p></div>
+        <div class="panel"><div class="card-title">Sites</div><p class="muted">Desks that load and stay up.</p></div>
+        <div class="panel"><div class="card-title">Apps</div><p class="muted">Small tools for the next experiment.</p></div>
       </div>
     </div>
   </section>
   <footer>
     <div class="wrap row">
-      <div>© <span id="year">2026</span> Vaulted Labs · Vault Station HQ</div>
+      <div>© <span id="year">2026</span> Vaulted Labs</div>
       <div>Not financial advice · <a href="https://github.com/VaultedLabs/VaultedLabs.github.io">source</a></div>
     </div>
   </footer>
