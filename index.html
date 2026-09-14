@@ -64,8 +64,8 @@
         </a>
         <a class="plain" href="#book">
           <span class="tiny">Book · live</span>
-          <strong>Experiments</strong>
-          <p>Market, flow, and fills sit on the book.</p>
+          <strong>Live coins</strong>
+          <p>Worth, volume, entries and exits refresh every 7 seconds.</p>
         </a>
       </div>
     </section>
@@ -76,10 +76,15 @@
       <div class="desk" id="liveDesk">
         <div class="desk-head">
           <div>
-            <div class="tiny" id="assetMeta">Loading book…</div>
-            <div class="asset-name" id="assetName">—</div>
+            <div class="tiny" id="assetMeta">Live book · 7s</div>
+            <div class="asset-name" id="assetName">Coins</div>
           </div>
-          <select id="assetSelect" aria-label="Select asset"></select>
+          <div class="pulse" id="bookPulse">refreshing</div>
+        </div>
+        <div class="frame list-frame">
+          <div class="frame-head"><span>Live coins</span><span class="dot" id="listStamp"> / book</span></div>
+          <div class="flow-head list-head"><span>Asset</span><span>Worth</span><span>Price</span><span>Volume</span><span>24h</span><span>In</span><span>Out</span></div>
+          <div id="liveList"></div>
         </div>
         <div class="stats" id="assetStats">
           <div><span>Market cap</span><b id="sMcap">—</b></div>
