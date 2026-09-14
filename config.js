@@ -1,14 +1,18 @@
 window.VAULT = {
   brand: "Vault Station HQ",
   studio: "Vaulted Labs",
-  ticker: "$HOLDV",
-  tokenName: "Hold Vault",
-  status: "Launch desk open",
-  venue: "https://multipair.fun",
-  venueLabel: "multipair.fun",
-  ca: "",
-  xHq: "https://x.com/VaultStationHQ",
-  xCoin: "https://x.com/HoldVaulted",
+  tagline: "We make ideas tradable.",
+  x: "https://x.com/VaultStationHQ",
+  xHandle: "@VaultStationHQ",
+  pumpProfile: "https://pump.fun/profile/CQknLDqYnrpTGaXf7uSeDEAox8b7zuwJrYDgpryKqm2u",
   github: "https://github.com/VaultedLabs/VaultedLabs.github.io",
-  email: "vaultedwealthkey@gmail.com"
+  email: "",
+  wallets: [
+    {
+      label: "Pump book",
+      address: "CQknLDqYnrpTGaXf7uSeDEAox8b7zuwJrYDgpryKqm2u",
+      pump: "https://pump.fun/profile/CQknLDqYnrpTGaXf7uSeDEAox8b7zuwJrYDgpryKqm2u",
+      solscan: "https://solscan.io/account/CQknLDqYnrpTGaXf7uSeDEAox8b7zuwJrYDgpryKqm2u"
+    }
+  ]
 };
