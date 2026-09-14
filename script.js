@@ -14,4 +14,17 @@
       } catch {}
     });
   });
+  const vault = document.querySelector(".vault");
+  const root = document.documentElement;
+  if (!vault) return;
+  const setOpen = () => {
+    const total = Math.max(vault.offsetHeight - window.innerHeight, 1);
+    const scrolled = Math.min(Math.max(-vault.getBoundingClientRect().top, 0), total);
+    const p = scrolled / total;
+    root.style.setProperty("--open", p.toFixed(4));
+    root.classList.toggle("vault-open", p > 0.92);
+  };
+  setOpen();
+  window.addEventListener("scroll", setOpen, { passive: true });
+  window.addEventListener("resize", setOpen);
 })();
